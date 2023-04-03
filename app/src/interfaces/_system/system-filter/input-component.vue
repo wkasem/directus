@@ -49,7 +49,8 @@
 				<v-icon class="preview" name="event" small @click="toggle" />
 			</template>
 			<div class="date-input">
-				<v-date-picker
+				<v-kasem-date-picker
+					:range="false"
 					:type="type"
 					:model-value="value"
 					@update:model-value="emitValue"

@@ -71,8 +71,10 @@ import VEmojiPicker from './v-emoji-picker.vue';
 import VWorkspace from './v-workspace.vue';
 import VWorkspaceTile from './v-workspace-tile.vue';
 import VErrorBoundary from './v-error-boundary.vue';
+import VKasemDatePicker from './kasem-date-picker/kasem-date-picker.vue';
 
 export function registerComponents(app: App): void {
+	app.component('VKasemDatePicker', VKasemDatePicker);
 	app.component('VAvatar', VAvatar);
 	app.component('VBadge', VBadge);
 	app.component('VBreadcrumb', VBreadcrumb);
